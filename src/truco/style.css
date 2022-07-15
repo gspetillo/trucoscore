@@ -74,8 +74,6 @@ body {
   align-items: center;
   width: 70vw;
   height: 25vw;
-  /* margin: 5vw 0; */
-  /* padding: 0 20px; */
   text-align: center;
   font-size: 5vw;
   font-weight: bold;
@@ -114,7 +112,37 @@ button {
 }
 
 @media screen and (max-width: 802px) {
+  #header {
+    font-size: 8vw;
+  }
+  #teams{
+    margin-top: 5vw;
+  }
+  #score {
+    margin-top: 5vw;
+    height: 50vw;
+  }
+  #score1,
+  #score2 {
+    font-size: 25vw;
+  }
+  .addButton {
+    font-size: 5vw;
+    height: 10vw;
+  }
+  #points input {
+    height: 20vw;
+    font-size: 8vw;
+  }
+  button {
+    height: 10vw;
+    font-size: 8vw;
+  }
   .team {
     flex-direction: column;
+  }
+  .team input {
+    color: #000;
+    height: 5vw;
   }
 }
