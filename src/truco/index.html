@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truco Score</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="header">
+        <a href="#" onclick="reset()">♣️ Truco Score ♥️</a>
+      </div>
+      <div id="teams">
+        <form action="#">
+          <div class="team">
+            <input
+              type="text"
+              id="team1"
+              placeholder="Nome da equipe 1"
+              onchange="updateNames()"
+            />
+          </div>
+          <div class="team">
+            <input
+              type="text"
+              id="team2"
+              placeholder="Nome da equipe 2"
+              onchange="updateNames()"
+            />
+          </div>
+        </form>
+      </div>
+      <div id="score">
+        <div id="team1">
+          <span></span>
+          <p id="score1">0</p>
+          <button class="addButton" onclick="addPoints(1)">Marcar</button>
+        </div>
+        <div id="points">
+          <button id="plus">+</button>
+          <input id="bet" type="number" name="" value="1" readonly/>
+          <button id="minus">-</button>
+        </div>
+        <div id="team2">
+          <span></span>
+          <p id="score2">0</p>
+          <button class="addButton" onclick="addPoints(2)">Marcar</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
